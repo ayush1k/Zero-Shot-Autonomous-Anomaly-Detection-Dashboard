@@ -155,6 +155,32 @@ Then:
 4. Wait for spinner to complete
 5. View live boxes/labels overlaid on the image
 
+## One-Command Run (Recommended)
+
+From the repository root, run both backend and frontend together:
+
+```bash
+make dev
+```
+
+This command:
+
+- starts Flask backend on port `5000`
+- starts Vite frontend on port `5173`
+- writes logs to `.run/logs/backend.log` and `.run/logs/frontend.log`
+
+To stop both services:
+
+```bash
+make dev-stop
+```
+
+To restart both services:
+
+```bash
+make dev-restart
+```
+
 ## Notes
 
 - The backend uses in-memory file processing only.
