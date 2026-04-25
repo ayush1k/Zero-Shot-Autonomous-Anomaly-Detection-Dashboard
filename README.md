@@ -9,6 +9,17 @@ An end-to-end anomaly/object detection dashboard using:
 
 The app lets you upload an image in the browser, send it to a Flask API for DETR inference, and render predicted boxes and labels directly on top of the preview.
 
+## What This Project Does
+
+This project provides a zero-shot object/anomaly detection workflow through a web dashboard:
+
+1. You upload an image from the frontend.
+2. The backend runs Hugging Face DETR inference on the image.
+3. The model returns detected objects with confidence scores and bounding boxes.
+4. The dashboard overlays those detections on the image so you can quickly inspect results.
+
+In short, it is a full-stack demo for running modern vision inference from a browser UI without writing custom model-training code.
+
 ## Project Structure
 
 ```text
